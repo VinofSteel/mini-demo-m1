@@ -1,0 +1,112 @@
+/* CABEÇALHO */
+header {
+    width: 100%;
+    height: 10vh;
+    background-color: #101010;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-weight: 800;
+    font-size: 2rem; /*1REM = 16px*/
+    color: white;
+    margin-right: auto;
+    margin-left: 5vw;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+    margin-right: 5vw;
+}
+
+header nav ul li {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+/* VITRINE */
+main {
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1rem auto 2rem auto;
+    gap: 0.5rem;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+main .box {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    overflow-x: auto;
+}
+
+main .box li {
+    height: 280px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 16px;
+    background-color: #f3f3f3;
+    box-shadow: 2px 5px 5px black;
+}
+
+main .box li figure {
+    height: 200px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+}
+
+main .box li figure img {
+    height: 200px;
+    width: 200px;
+    border-radius: 16px;
+    object-fit: fill;
+    overflow: hidden;
+}
+
+main .box li figure figcaption {
+    margin-top: 5px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+main .box li p {
+    font-weight: 400;
+    font-size: 0.7rem;
+    color: #5a5a5a;
+}
+
+main .box li button {
+    border-radius: 16px;
+    padding: 0.5rem;
+    border: none;
+    background-color: #f3f3f3;
+    color: #101010;
+    cursor: pointer;
+}
