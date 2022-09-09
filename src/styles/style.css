@@ -123,7 +123,7 @@ main .box li button:hover {
 
 aside {
     width: 30vw;
-    height: 70vw;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     margin-left: auto;
@@ -152,6 +152,39 @@ aside ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 1.5rem;
     overflow-y: auto;
+}
+
+aside ul li {
+    width: 90%;
+    height: 8vh;
+    border: 2px solid #5a5a5a;
+    background-color: #101010;
+    padding: 0.25rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+aside ul li p {
+    font-weight: 700;
+    color: white;
+    font-size: 1.2rem;
+}
+
+aside ul li span {
+    font-weight: 600;
+    color: white;
+    font-size: 1rem;
+}
+
+aside ul li button {
+    border: none;
+    background-color: #101010;
+    color: red;
+    font-size: 1.4rem;
+    font-weight: 500;
+    cursor: pointer;
 }
