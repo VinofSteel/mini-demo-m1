@@ -11,6 +11,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
 }
 
 header h1 {
@@ -45,7 +47,7 @@ main {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin: 1rem 0 2rem 1rem;
+    margin: 12vh 0 2rem 1rem;
     gap: 0.5rem;
 }
 
@@ -131,6 +133,11 @@ aside {
     justify-content: flex-start;
     align-items: center;
     gap: 2rem;
+    border: 3px solid #101010;
+    border-radius: 1rem;
+    position: fixed;
+    top: 18vh;
+    right: 0;
 }
 
 aside div {
@@ -148,7 +155,7 @@ aside div {
 
 aside ul {
     height: 100%;
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -157,7 +164,7 @@ aside ul {
 }
 
 aside ul li {
-    width: 90%;
+    width: 100%;
     height: 8vh;
     border: 2px solid #5a5a5a;
     background-color: #101010;
@@ -171,13 +178,14 @@ aside ul li {
 aside ul li p {
     font-weight: 700;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 aside ul li span {
     font-weight: 600;
     color: white;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    width: fit-content;
 }
 
 aside ul li button {
