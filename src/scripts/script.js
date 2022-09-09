@@ -80,7 +80,7 @@ const criadorCarrinho = (arr) => {
     }
 }
 
-criadorVerdadeiro(database)
+// criadorVerdadeiro(database)
 
 
 
