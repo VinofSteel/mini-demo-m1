@@ -1,4 +1,9 @@
 /* CABEÇALHO */
+.container {
+    display: flex;
+    align-items: center;
+}
+
 header {
     width: 100%;
     height: 10vh;
@@ -11,8 +16,7 @@ header {
 header h1 {
     font-weight: 800;
     font-size: 2rem; /*1REM = 16px*/
-    color: white;
-    margin-right: auto;
+    color: white;   
     margin-left: 5vw;
 }
 
@@ -39,8 +43,9 @@ main {
     width: 60vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 1rem auto 2rem auto;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 1rem 0 2rem 1rem;
     gap: 0.5rem;
 }
 
@@ -51,7 +56,7 @@ main h2 {
 }
 
 main .box {
-    width: 100%;
+    width: 60vw;
     height: 300px;
     display: flex;
     align-items: center;
@@ -66,8 +71,8 @@ main .box li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
-    border-radius: 16px;
+    gap: 0.6rem;
+    border-radius: 1rem;
     background-color: #f3f3f3;
     box-shadow: 2px 5px 5px black;
 }
@@ -84,14 +89,14 @@ main .box li figure {
 main .box li figure img {
     height: 200px;
     width: 200px;
-    border-radius: 16px;
+    border-radius: 1rem;
     object-fit: fill;
     overflow: hidden;
 }
 
 main .box li figure figcaption {
     margin-top: 5px;
-    font-weight: 600;
+    font-weight: 800;
     font-size: 1.3rem;
     text-align: center;
 }
@@ -103,10 +108,50 @@ main .box li p {
 }
 
 main .box li button {
-    border-radius: 16px;
+    border-radius: 1rem;
     padding: 0.5rem;
     border: none;
     background-color: #f3f3f3;
     color: #101010;
     cursor: pointer;
+}
+
+main .box li button:hover {
+    box-shadow: 2px 5px 5px black;
+    border: #5a5a5a 1px solid;
+}
+
+aside {
+    width: 30vw;
+    height: 70vw;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+}
+
+aside div {
+    margin-top: 1rem;
+    width: 90%;
+    text-align: center;
+    background-color: #101010;
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 2px 5px 5px black;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+aside ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    overflow-y: auto;
 }
